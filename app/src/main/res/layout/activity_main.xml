@@ -14,26 +14,40 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="236dp"
         android:backgroundTint="@color/white"
-        android:text="Roll"
+        android:text="@string/roll"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:flow_horizontalBias="0.500"
         app:flow_verticalBias="0.500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/roll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roll" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
